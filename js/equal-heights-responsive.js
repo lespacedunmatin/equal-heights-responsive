@@ -1,4 +1,3 @@
-
 //	 Equal Heights Responsive 1.0
 //   Author: John Faldo 
 //   Copyright John Faldo 2013 
@@ -40,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			
 			//find and set the height of the tallest element
 			that.each(function() {
-				var elementHeight = $(this).height();
+				var elementHeight = $(this).outerHeight();
 				height = (elementHeight > height) ? elementHeight : height;
 			});
 			
